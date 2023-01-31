@@ -1088,7 +1088,7 @@ body {
   color: #fff;
   background-color: #404040;
   background-image: url('https://marw3g.github.io/assets/pictures/beautiful-milky-way-night-sky-min.jpg');
-  object-fit: cover;
+  object-fit:fill;
 
 }
 input,
