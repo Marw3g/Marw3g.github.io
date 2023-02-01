@@ -77,7 +77,6 @@ html {
   -webkit-user-select: none;
   touch-action: manipulation;
   width: 100%;
-  display: inline-block;
 }
 
 .button-31:hover,
