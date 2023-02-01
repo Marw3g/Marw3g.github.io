@@ -22,7 +22,7 @@ html {
     line-height: 40px;
     overflow: hidden;
     z-index: 999;
-    display: none;
+    display:inline-block;
     cursor: pointer;
     -moz-transform: rotate(270deg);
     -webkit-transform: rotate(270deg);
