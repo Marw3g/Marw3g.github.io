@@ -42,6 +42,13 @@ html {
     background-color: #337AB7;
     color: #FFF;
 }
+.navigation-section {
+    height: 25%;
+    padding-top: 0px;
+    text-align: center;
+    background: #0953c2;
+}
+
 .welcome-section {
     height: 100%;
     padding-top: 150px;
