@@ -37,6 +37,7 @@ html {
     text-align: center;
     font-size: 30px;
     text-decoration: none;
+    display: inline-block;
 }
 #back2Top:hover {
     background-color: #337AB7;
