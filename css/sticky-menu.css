@@ -48,6 +48,11 @@ html {
     text-align: center;
     background: #0953c2;
 }
+
+section {
+    height: 100%;
+}
+
 /* 
 base col: 
 #999999
@@ -101,9 +106,8 @@ base col:
     height: 100%;
     padding-top: 150px;
     text-align: center;
-   /* background: rgb(223, 223, 223);*/
+    background: rgb(223, 223, 223);
 
-    background-image: url("assets/pictures/background-3.jpg")
 }
 .about-section {
     height: 100%;
