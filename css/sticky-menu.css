@@ -101,7 +101,9 @@ base col:
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #008028;
+   /* background: rgb(223, 223, 223);*/
+
+    background-image: url("background-3.jpg")
 }
 .about-section {
     height: 100%;
