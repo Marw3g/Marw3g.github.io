@@ -73,10 +73,11 @@ html {
   position: relative;
   text-align: center;
   text-transform: none;
+  text-decoration: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 100%;
+  width: 33%;
   display: inline-block;
 }
 
