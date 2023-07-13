@@ -1,34 +1,135 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Garten- und Landbau</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/sticky-menu.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class = "navigation-section"> 
-      <a class="button-31" href="#Home"> HOME </a>
-      <a class="button-31" href="#Über-Uns"> ÜBER UNS</a>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willkommen bei Gartenbau Firma XYZ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    /* Füge einige grundlegende Stile hinzu */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .container {
+        width: 100%;
+    height: 100vh;
+    display: flex;
+    }
+    
+    .navbar-toggle-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .navbar {
+      flex-shrink: 0;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    
+    .navbar-button {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    
+    .content {
+      flex-grow: 1;
+        padding: 20px;
+    }
+    
+    .hero-image {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    
+    .services {
+      margin-top: 30px;
+    }
+    
+    .service {
+      margin-bottom: 20px;
+    }
+    
+    .service h3 {
+      margin-bottom: 10px;
+    }
+    
+    .service p {
+      margin-bottom: 0;
+    }
+    
+    .contact-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+    <script src="static\js\navbar.js"></script>
+        
+
+</head>
+<body>
+  <div class="container">
+
+
+
+    <div id = "navbar" class="navbar">
+
+
+      <a class="navbar-button" href="startseite.html">Startseite</a>
+      <a class="navbar-button" href="ueber-uns.html">Über uns</a>
+      <a class="navbar-button" href="dienstleistungen.html">Dienstleistungen</a>
+      <a class="navbar-button" href="referenzen.html">Referenzen</a>
+      <a class="navbar-button" href="kontakt.html">Kontakt</a>
     </div>
+        <button onclick="toggleNavbar()" class="navbar-toggle-button"><i class="fas fa-bars"></i></button>
+    <div class="content">
+      <h1>Willkommen bei Gartenbau Firma XYZ</h1>
+      
+      <img class="hero-image" src="static/background-3.jpg" alt="Gartenbild">
+      <img class="hero-image" src="static/background-3.jpg" alt="Gartenbild">
+      <img class="hero-image" src="static/background-3.jpg" alt="Gartenbild">
+      <img class="hero-image" src="static/background-3.jpg" alt="Gartenbild">
+      <div class="services">
+        <div class="service">
+          <h3>Gartenplanung und -gestaltung</h3>
+          <p>Wir planen und gestalten individuelle Gärten, die Ihren Vorstellungen und Bedürfnissen entsprechen.</p>
+        </div>
+        
+        <div class="service">
+          <h3>Pflanzenlieferung und -installation</h3>
+          <p>Wir bieten hochwertige Pflanzen und übernehmen die fachgerechte Installation in Ihrem Garten.</p>
+        </div>
+        
+        <div class="service">
+          <h3>Rasenpflege und -wartung</h3>
+          <p>Unser Team sorgt für die regelmäßige Pflege und Wartung Ihres Rasens, damit er stets grün und gesund bleibt.</p>
+        </div>
+      </div>
+      
+      <p>Möchten Sie mehr über unsere Dienstleistungen erfahren oder einen Termin vereinbaren? Kontaktieren Sie uns jetzt!</p>
+      
+      <a class="contact-button" href="kontakt.html">Kontakt</a>
+    </div>
+  </div>
+</body>
+</html>
 
-    <section id="Home" class = "welcome-section"> 
-      <h1> Home</h1>
-      <p> This is the home of the test page</p>
-    <section>
-
-    <section id="Über-Uns" class = "about-section">
-      <h2> Über Uns </h2>
-      <p> This is the About us section of our test page</p>
-
-      <button> class= "button-31" Test</button>
-    </section>
-
-
-
-    <script src="js/bootstrap.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="js/sticky-menu.js" crossorigin="anonymous"></script>
-  </body>
-</html> 
