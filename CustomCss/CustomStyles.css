@@ -1,0 +1,16 @@
+
+
+
+.container1 {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 10px;
+}
+
+h1 {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.507);
+    background: url(../Assets/Img/pexels-pixabay-147411.jpg);
+    background-size:cover;
+    font-size: 100px;
+    color: aliceblue;
+}
