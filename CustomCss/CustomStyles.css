@@ -14,3 +14,119 @@ h1 {
     font-size: 100px;
     color: aliceblue;
 }
+/*
+.firework-button {
+    size: 50%;
+    position: relative;
+    color: linear-gradient(90deg, rgb(29, 124, 119) 0%, rgb(50, 210, 231) 58%, rgb(122, 155, 168) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(0, 62, 177, 0.637) 0%, rgb(6, 205, 255) 58%, rgb(32, 234, 248) 100%);;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.firework-button:hover {
+    animation: wiggle 5s infinite;
+}
+
+.firework-button::after {
+    animation: shoot 20s;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg)
+    }
+    33% {
+        transform: rotate(30deg)
+    }
+    66% {
+        transform: rotate(-30deg)
+    }
+    100% {
+        transform: rotate(0deg)
+    }
+
+} */
+
+
+
+/* Button styling */
+.firework-button {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(90deg, rgba(0, 62, 177, 0.637) 0%, rgb(6, 205, 255) 58%, rgb(32, 234, 248) 100%);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rocket icon styling */
+.firework-button .fa.fa-rocket {
+    font-size: 2em;
+    transition: transform 0.5s ease;
+}
+
+/* Animation triggered when .animate class is added */
+.firework-button.animate .fa.fa-rocket {
+    animation: shoot 0.5s forwards, disappear 0.5s 0.5s forwards;
+}
+
+/* Explosion styling */
+.firework-button .explosion {
+    position: absolute;
+    top: -200px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Explosion triggered by .animate class */
+.firework-button.animate .explosion {
+    animation: explode 0.5s forwards 0.5s;
+}
+
+/* Shoot upwards animation */
+@keyframes shoot {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px) scale(1.2);
+        opacity: 0.5;
+    }
+}
+
+/* Explosion effect (appear, scale up, and fade out) */
+@keyframes explode {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
+
+/* Make the rocket disappear */
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
